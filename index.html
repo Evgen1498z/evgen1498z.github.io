@@ -1,1 +1,310 @@
-<!DOCTYPE html><html><head> <title>Evgeny Zhukov - Web Developer</title> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> <link href="http://fonts.googleapis.com/css?family=Orbitron:700,400" rel="stylesheet" type="text/css"> <style type="text/css">body,html{background-color:#EBEBEB;width:100%;cursor:default;height:100%;margin:0;padding:0}::selection{background:#000;color:#FFF}::-moz-selection{background:#000;color:#FFF}.unselectable{-moz-user-select:none;-khtml-user-select:none;-webkit-user-select:none;-ms-user-select:none;user-select:none}.coming-soon{font-family:Orbitron,sans-serif;text-align:center;font-size:32px;padding-top:10%}.email{font-size:18px;-moz-user-select:text;-khtml-user-select:text;-webkit-user-select:text;-ms-user-select:text;user-select:text;cursor:text}.icons{font-size:20px;}.icons>a{color:#9E9E9E;}</style></head><body class="unselectable"> <div class="coming-soon"><b>Evgeny Zhukov</b> <br/><span style="font-size: 18px;">Web Developer</span> <br/><b><span class="email">evgen1498z@gmail.com</span></b>  <br/><b><span class="icons"> <a href="https://github.com/evgen1498z" target="_blank"><i class="fa fa-github"></i></a> </span></b> </div></body></html>
+<!DOCTYPE html> <html>
+<head>
+   <title>Evgeny Zhukov</title>
+   <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="assets/style/css/animate.min.css">
+	<link href="assets/style/css/assets.css" rel="stylesheet" type="text/css">
+    <link href="core/style/css/bootstrap.min.css" rel="stylesheet">
+    <link href="core/style/css/fontawesome.css" rel="stylesheet">
+    <link href="core/style/css/animate.min.css" rel="stylesheet">
+    <link href="core/style/css/style.css" rel="stylesheet">
+	<link href="core/style/css/sweetalert2.css" rel="stylesheet">
+	<link href="core/style/css/fullPage.css" rel="stylesheet">
+    <script type="text/javascript" src="core/js/sweetalert2.min.js"></script>
+	<script type="text/javascript" src="core/js/Masonry.js"></script>
+    <script type="text/javascript" src="core/js/jquery-2.1.0.min.js"></script>
+	<script src="core/js/fullPage.js"></script>
+</head>
+<body>
+<ul class="slideshow">
+<video id="video" preload="auto" autoplay="autoplay" loop="loop">
+<source src="videos/video.mp4" type="video/mp4"/>
+</video>
+</ul>
+<div id="fullpage" class="fullpage-wrapper">
+	    <div class="section" id="section0" data-anchor="Main">
+	        <div class="pattern">
+	            <div class="container center-container">
+				
+	                <h1 class="site-title">
+                        Evgeny Zhukov
+					</h1>
+	                <h2 class="site-style">
+	                    Welcome to my site!
+	                </h2>
+	                <h2 class="site-email">
+	                    <b>me@ev-zhukov.design</b>
+	                </h2>
+               		</div>
+	        </div>
+	    </div>
+    </div>
+	<script type="text/javascript" src="core/js/modernizr-2.8.0.min.js"></script>
+	<script type="text/javascript" src="core/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="core/js/jquery.ajaxchimp.min.js"></script>
+	<script type="text/javascript" src="core/js/circle-progress.min.js"></script>
+	<script type="text/javascript" src="core/js/functions.js"></script>
+    <div class="dialog">
+<div class="dialog">
+	     <script>
+      (function () {
+        "use strict";
+        var videosSection = document.getElementById("backgroundsection");
+        var videosSectionClone = videosSection.cloneNode();
+        var videos = videosSection.getElementsByTagName("video");
+        var randomVideo = videos.item(Math.floor(Math.random() * videos.length)).cloneNode(true);
+        randomVideo.removeAttribute("controls");
+        randomVideo.setAttribute("preload", "auto");
+        videosSectionClone.appendChild(randomVideo);
+        videosSection.parentNode.replaceChild(videosSectionClone, videosSection);
+        randomVideo.play();
+      })();
+</script>
+    
+
+<script type="text/javascript">
+document.onkeydown = function(e) {
+e = e || window.event;
+if(e.keyCode == 85 | e.keyCode == 83) {
+return false;
+}
+return true;
+}
+    </script>
+    <script type="text/javascript">
+window.onkeydown = function(evt) {
+if(evt.keyCode == 123) return false;
+};
+
+window.onkeypress = function(evt) {
+if(evt.keyCode == 123) return false;
+};
+    </script>
+	<script>
+    document.onkeydown = function(e) {
+        if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 117)) {
+        }
+        return false;
+    };
+    function click() {
+        if (event.button == 2||event.button==3) {
+            oncontextmenu='return false';
+        }
+    }
+    document.onmousedown=click;
+    document.oncontextmenu = new Function("return false;")
+</script>
+		<script type="text/javascript">
+var isCtrl = false;
+document.onkeyup=function(e)
+{
+if(e.which == 17)
+isCtrl=false;
+}
+document.onkeydown=function(e)
+{
+if(e.which == 17)
+isCtrl=true;
+if((e.which == 85) || (e.which == 67) && isCtrl == true)
+{
+	window.open("https://vk.com/id351205480","_self");
+// alert(&#8216;Keyboard shortcuts are cool!&#8217;);
+return false;
+}
+}
+var isNS = (navigator.appName == "Netscape") ? 1 : 0;
+if(navigator.appName == "Netscape") document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP);
+function mischandler(){
+return false;
+}
+function mousehandler(e){
+var myevent = (isNS) ? e : event;
+var eventbutton = (isNS) ? myevent.which : myevent.button;
+if((eventbutton==2)||(eventbutton==3)) return false;
+}
+document.oncontextmenu = mischandler;
+document.onmousedown = mousehandler;
+document.onmouseup = mousehandler;
+</script>
+	<script type="text/javascript">
+	function kill_ctrl_key_combo(e) {
+    var forbiddenKeys = new Array('a', 'c', 'x', 's', 'u');
+    var key;
+    var isCtrl;
+    if (window.event) {
+        key = window.event.keyCode;
+        if (window.event.ctrlKey) isCtrl = true;
+        else isCtrl = false;
+    } else {
+        key = e.which;
+        if (e.ctrlKey) isCtrl = true;
+        else isCtrl = false;
+    }
+    //if ctrl is pressed check if other key is in forbidenKeys array
+    if (isCtrl) {
+        for (i = 0; i < forbiddenKeys.length; i++) { //case-insensitive comparation
+            if (forbiddenKeys[i].toLowerCase() == String.fromCharCode(key).toLowerCase()) {
+window.open("https://vk.com/id351205480","_self");
+                return false;
+            }
+        }
+    }
+    return true;
+}
+
+function disable_selection(target) {
+    if (typeof target.style.MozUserSelect != "undefined") {
+        target.style.MozUserSelect = "none";
+    }
+    target.style.cursor = "default";
+}
+
+function double_mouse(e) {
+    if (e.which == 2 || e.which == 3) {
+        return false;
+    }
+    return true;
+}
+
+function enable_protection() {
+    disable_selection(document.body); //These will disable selection on the page
+    document.captureEvents(Event.MOUSEDOWN);
+    document.onmousedown = double_mouse; //These will disable double mouse on the page
+    document.oncontextmenu = function() {
+        return false;
+    }; //These will disable right click on the page
+    document.onkeydown = kill_ctrl_key_combo;
+}
+
+window.onload = function() { //These will enable protection on the page
+    enable_protection();
+};
+											 </script>
+	<script type="text/javascript">
+  document.ondragstart = noselect;
+  document.onselectstart = noselect;
+  document.oncontextmenu = noselect;
+  function noselect() {return false;}
+</script>
+	<script type="text/javascript">
+var message="";
+function clickIE() {if (document.all) {(message);return false;}}
+function clickNS(e) {if
+(document.layers||(document.getElementById&&!document.all)) {
+if (e.which==2) {
+(message);
+return false;}}}
+if (document.layers) {
+document.captureEvents(Event.MOUSEDOWN);
+document.onmousedown=clickNS;
+}else{
+document.onmouseup=clickNS;
+document.oncontextmenu=clickIE;
+}
+document.oncontextmenu=new Function("return false")
+</script>
+ <script>
+    /*function check(e)
+    {
+    alert(e.keyCode);
+    }*/
+    document.onkeydown = function(e) {
+            if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 117)) {//Alt+c, Alt+v will also be disabled sadly.
+                window.open("https://vk.com/id351205480","_self");
+            }
+            return false;
+    };
+    </script>
+	<script>
+	$(document).keydown(function(event){
+    if(event.keyCode==123){
+         window.open("https://vk.com/id351205480","_self");
+		return false;
+		
+    }
+    else if (event.ctrlKey && event.shiftKey && event.keyCode==73){        
+              window.open("https://vk.com/id351205480","_self");
+			 return false;
+			 
+    }
+});
+
+$(document).on("contextmenu",function(e){        
+   e.preventDefault();
+});
+</script>
+
+
+<script language="JavaScript">
+var message="SAD PAGE =(";
+document.ondragstart = test;
+document.onselectstart = test;
+function test() {
+document.oncontextmenu=new Function("alert(message);return false")
+return false
+}
+</script>
+<script type="text/javascript">
+window.addEventListener("keydown",function (e) {
+    if (e.keyCode === 114 || (e.ctrlKey && e.keyCode === 70)) { 
+        e.preventDefault();
+    }
+})
+window.addEventListener("keydown",function (e) {
+    if (e.keyCode === 114 || (e.ctrlKey && e.keyCode === 74)) { 
+        e.preventDefault();
+    }
+})
+window.addEventListener("keydown",function (e) {
+    if (e.keyCode === 114 || (e.ctrlKey && e.keyCode === 17)) { 
+        e.preventDefault();
+    }
+})
+window.addEventListener("keydown",function (e) {
+    if (e.keyCode === 114 || (e.ctrlKey && e.keyCode === 16)) { 
+        e.preventDefault();
+    }
+})
+window.addEventListener("keydown",function (e) {
+    if (e.keyCode === 114 || (e.ctrlKey && e.keyCode === 83)) { 
+        e.preventDefault();
+    }
+})
+window.addEventListener("keydown",function (e) {
+    if (e.keyCode === 114 || (e.ctrlKey && e.keyCode === 85)) { 
+        e.preventDefault();
+    }
+})
+window.addEventListener("keydown",function (e) {
+    if (e.keyCode === 123 || (e.ctrlKey && e.keyCode === 123)) { 
+        e.preventDefault();
+    }
+})
+window.addEventListener("keydown",function (e) {
+    if (e.keyCode === 123 || (e.ctrlKey && e.keyCode === 73)) { 
+        e.preventDefault();
+    }
+})
+</script>
+
+<script type="text/javascript">
+var message="SAD PAGE =(";
+ document.onkeydown = function(e) {
+	 	 document.oncontextmenu=new Function("alert(message);return false")
+   e = e || window.event;
+ if(e.keyCode == 85 || e.keyCode == 83 || e.keyCode == 123 || e.keyCode == 74 || e.keyCode == 17 || e.keyCode == 16){
+     return false;
+   }
+   return true;
+ }
+				</script>
+			</div>
+		</div>
+<!--<script>
+	$(document).ready(function(){
+		$('#fullpage').fullpage();
+	});
+</script>-->
+	</body>
+</html>
